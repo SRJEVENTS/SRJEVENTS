@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #c00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.event-card:hover .overlay {
+    opacity: 1;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c00;
+    color: white;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%); /* Apply a grayscale effect */
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: none; /* Remove grayscale on hover */
+}
+
+/* Mobile-first styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #c00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.event-card:hover .overlay {
+    opacity: 1;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c00;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%); /* Apply a grayscale effect */
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: none; /* Remove grayscale on hover */
+}
+
+/* Responsive Design for Tablets and Desktops */
+@media (min-width: 600px) {
+    .events-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
